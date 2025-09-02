@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Projects</title>
+    <meta name="description" content="Selected ecommerce builds and optimizations.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#0b0d12',
+                        card: '#0f1421',
+                        text: '#e8ecf1',
+                        muted: '#9a9fb0',
+                        brand: '#5aa9ff',
+                        mint: '#7cf3c5'
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(0,0,0,.35)'
+                    },
+                    transitionTimingFunction: {
+                        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b0d12' stroke='%237cf3c5' stroke-width='8'/%3E%3Cpath d='M28 64 L50 20 L72 64' stroke='%235aa9ff' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0b0d12">
+    <style>
+        body{background:#5e8e3e}
+    </style>
+</head>
+<body class="text-white antialiased">
+    <header class="max-w-6xl mx-auto px-5 pt-10 pb-4">
+        <h1 class="text-3xl tracking-tight font-semibold">Selected Work</h1>
+        <p class="text-muted text-sm">Ecommerce builds and optimizations. Hover to preview mobile.</p>
+    </header>
+
+    <main id="work" class="max-w-6xl mx-auto px-5 space-y-8 pb-16">
+        <!-- Fellow Products -->
+        <a href="https://fellowproducts.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#111827] opacity-0 translate-y-6">
+            <div class="relative w-full aspect-[16/9] overflow-hidden">
+                <img src="assets/Fellow Products - Desktop.png" alt="Fellow Products desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
+                <img src="assets/Fellow Products - Mobile.png" alt="Fellow Products mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
+            </div>
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">Fellow Products</h3>
+                <p class="text-muted text-sm">Shopify optimization, responsive landers, speed, variants, gifts, checkout validation.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Liquid, JS, Scripts, Checkout Ext.">Shopify</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Performance budgeting, lazy-loading, CLS/LCP.">Performance</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Gift logic, dynamic pricing.">Custom Features</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Kassatex -->
+        <a href="https://kassatex.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#1b4d7a] opacity-0 translate-y-6">
+            <div class="relative w-full aspect-[16/9] overflow-hidden">
+                <img src="assets/Kassatex- Desktop.png" alt="Kassatex desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
+                <img src="assets/Kassatex- Mobile.png" alt="Kassatex mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
+            </div>
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">Kassatex</h3>
+                <p class="text-muted text-sm">Lightweight theme, speed, modular A/B testing, Klaviyo integration.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Section schema, settings, metafields.">Theme</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="ES6 modules for test buckets.">A/B Testing</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Flows without page weight.">Klaviyo</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Chubbies Shorts -->
+        <a href="https://chubbiesshorts.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#0ea5e9] opacity-0 translate-y-6">
+            <div class="relative w-full aspect-[16/9] overflow-hidden">
+                <img src="assets/Chubbies Shorts - Desktop.png" alt="Chubbies Shorts desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
+                <img src="assets/Chubbies Shorts - Mobile.png" alt="Chubbies Shorts mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
+            </div>
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">Chubbies Shorts</h3>
+                <p class="text-muted text-sm">Headless migration with React + Remix. Reusable UI and storefront API.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Server and client routing.">Remix</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="GraphQL queries, caching.">Storefront API</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Design systems from Figma.">Components</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Cariuma -->
+        <a href="https://cariuma.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#2db34a] opacity-0 translate-y-6">
+            <div class="relative w-full aspect-[16/9] overflow-hidden">
+                <img src="assets/Cariuma - Desktop.png" alt="Cariuma desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
+                <img src="assets/Cariuma - Mobile.png" alt="Cariuma mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
+            </div>
+            <div class="p-5">
+                <h3 class="text-lg font-semibold">Cariuma</h3>
+                <p class="text-muted text-sm">Multi-language, multi-currency, app integrations, dynamic landing pages.</p>
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Shopify Plus features.">Shopify Plus</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Internationalization and locales.">i18n</span>
+                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="HTML5 video, lazy loading.">Dynamic</span>
+                </div>
+            </div>
+        </a>
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-5 pb-24">
+        <div class="flex items-center justify-between gap-4">
+            <p class="text-muted text-sm">© <span id="y"></span> Prof Coder — Portfolio</p>
+            <a href="mailto:profcoder810@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-text bg-gradient-to-tr from-brand/30 to-mint/30 border border-white/15 shadow-soft hover:shadow-lg hover:scale-[1.02] active:scale-[.99] transition-all duration-300 ease-expo">
+                Contact Jaming Now!
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h15c1.243 0 2.25 1.007 2.25 2.25v10.5c0 1.243-1.007 2.25-2.25 2.25h-15c-1.243 0-2.25-1.007-2.25-2.25V6.75Zm2.288-.53a.75.75 0 0 0-1.026 1.094l7.5 7.036a.75.75 0 0 0 1.026 0l7.5-7.036a.75.75 0 1 0-1.026-1.094L12 12.54 4.538 6.22Z"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+        document.getElementById('y').textContent = new Date().getFullYear();
+        // Skill popovers
+        document.querySelectorAll('.skill').forEach(function(el){
+            var tip = el.getAttribute('data-tip');
+            if(!tip) return;
+            var bubble = document.createElement('span');
+            bubble.className = 'pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-black/80 text-white text-[11px] px-2 py-1 opacity-0 scale-95 transition-all duration-300 ease-expo shadow-lg';
+            bubble.textContent = tip;
+            el.appendChild(bubble);
+            el.addEventListener('mouseenter', function(){ bubble.style.opacity='1'; bubble.style.transform='translateX(-50%) scale(1)'; });
+            el.addEventListener('mouseleave', function(){ bubble.style.opacity='0'; bubble.style.transform='translateX(-50%) scale(0.95)'; });
+        });
+        // Reveal projects on scroll using anime.js
+        (function(){
+            var items = document.querySelectorAll('.proj');
+            // assign index for staggered delays
+            items.forEach(function(el, i){ el.dataset.idx = i; });
+            if(!('IntersectionObserver' in window)){
+                anime({ targets: items, opacity: [0,1], translateY: [24,0], delay: anime.stagger(120), duration: 700, easing: 'easeOutExpo' });
+                return;
+            }
+            var io = new IntersectionObserver(function(entries){
+                entries.forEach(function(entry){
+                    if(entry.isIntersecting){
+                        var idx = parseInt(entry.target.dataset.idx || '0', 10);
+                        anime({ targets: entry.target, opacity: [0,1], translateY: [24,0], delay: idx * 140, duration: 800, easing: 'easeOutExpo' });
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            items.forEach(function(el){ io.observe(el); });
+        })();
+    </script>
+</body>
+</html>
+

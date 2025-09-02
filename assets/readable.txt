@@ -1,0 +1,46 @@
+1. Fellow Products
+Shopify Store Optimization & Custom Features
+✅ Responsive Landing Pages – Built fully adaptive pages for all devices.
+✅ Google Page Speed Optimization – Achieved top-tier performance scores.
+✅ Advanced Product Variants – Implemented multi-option variants (colors, materials).
+✅ Gift Logic & Dynamic Pricing – Created Shopify Scripts for optimized gift pricing.
+✅ Checkout Stock Validation – Integrated checkout extension for real-time stock checks.
+Tech Stack:
+•	Shopify Liquid, JavaScript, CSS/SCSS
+•	Shopify Scripts, Checkout Extensions
+________________________________________
+2. Kassatex
+Lightweight & High-Performance Shopify Store
+✅ Optimized Store Speed – Ensured fast load times with minimal bloat.
+✅ A/B Testing with Dynamic JS – Implemented modular JS for seamless testing.
+✅ Klaviyo Integration – Set up email marketing without performance impact.
+Tech Stack:
+•	Shopify Theme Customization
+•	JavaScript (ES6), Klaviyo, A/B Testing Tools
+________________________________________
+3. Chubbies Shorts
+Shopify Headless (React.js + Remix) Migration
+✅ Full Headless Transition – Rebuilt store using React.js + Remix for better flexibility.
+✅ Figma-to-React Component Integration – Developed reusable UI components.
+✅ Performance Optimization – Enhanced speed and UX in a headless environment.
+✅ End-to-End Development – Managed entire project from design to deployment.
+Tech Stack:
+•	React.js, Remix, GraphQL
+•	Shopify Storefront API, Figma
+________________________________________
+4. Cariuma
+Multi-Language Shopify Store & Advanced Integrations
+✅ Global E-Commerce Setup – Built multi-language/multi-currency support.
+✅ Third-Party App Integration – Seamlessly added external tools without conflicts.
+✅ Dynamic Landing Pages – Enhanced engagement with video & animations.
+Tech Stack:
+•	Shopify Plus, Liquid, JavaScript
+•	i18n, Video Embedding (HTML5, Lazy Loading)
+________________________________________
+Core Skills
+🔹 Shopify Development (Liquid, Theme Customization, Headless)
+🔹 Performance Optimization (Page Speed, Core Web Vitals)
+🔹 Custom Features (Checkout Extensions, Dynamic Pricing, A/B Testing)
+🔹 Headless Commerce (React.js, Remix, Next.js, Storefront API)
+🔹 Third-Party Integrations (Klaviyo, ERP, Payment Gateways)
+
