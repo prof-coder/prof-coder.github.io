@@ -43,8 +43,8 @@
         <p class="text-muted text-sm">Ecommerce builds and optimizations. Hover to preview mobile.</p>
     </header>
 
-    <!-- Sticky Navigation -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <!-- Sticky Navigation with ScrollSpy -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200" id="navbar">
         <div class="max-w-6xl mx-auto px-5 py-3">
             <div class="flex gap-6 overflow-x-auto">
                 <a href="#fellow" class="nav-link whitespace-nowrap text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors duration-200">Fellow Products</a>
@@ -63,7 +63,7 @@
                 <img src="assets/Fellow Products - Mobile.png" alt="Fellow Products mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
             </div>
             <div class="p-5">
-                <h3 class="text-lg font-semibold">Fellow Products</h3>
+                <h3 class="text-lg font-semibold text-white">Fellow Products</h3>
                 <p class="text-muted text-sm">Shopify optimization, responsive landers, speed, variants, gifts, checkout validation.</p>
                 <div class="flex flex-wrap gap-2 mt-3">
                     <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Liquid, JS, Scripts, Checkout Ext.">Shopify</span>
@@ -80,7 +80,7 @@
                 <img src="assets/Kassatex- Mobile.png" alt="Kassatex mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
             </div>
             <div class="p-5">
-                <h3 class="text-lg font-semibold">Kassatex</h3>
+                <h3 class="text-lg font-semibold text-white">Kassatex</h3>
                 <p class="text-muted text-sm">Lightweight theme, speed, modular A/B testing, Klaviyo integration.</p>
                 <div class="flex flex-wrap gap-2 mt-3">
                     <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Section schema, settings, metafields.">Theme</span>
@@ -97,7 +97,7 @@
                 <img src="assets/Chubbies Shorts - Mobile.png" alt="Chubbies Shorts mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
             </div>
             <div class="p-5">
-                <h3 class="text-lg font-semibold">Chubbies Shorts</h3>
+                <h3 class="text-lg font-semibold text-white">Chubbies Shorts</h3>
                 <p class="text-muted text-sm">Headless migration with React + Remix. Reusable UI and storefront API.</p>
                 <div class="flex flex-wrap gap-2 mt-3">
                     <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Server and client routing.">Remix</span>
@@ -114,7 +114,7 @@
                 <img src="assets/Cariuma - Mobile.png" alt="Cariuma mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
             </div>
             <div class="p-5">
-                <h3 class="text-lg font-semibold">Cariuma</h3>
+                <h3 class="text-lg font-semibold text-white">Cariuma</h3>
                 <p class="text-muted text-sm">Multi-language, multi-currency, app integrations, dynamic landing pages.</p>
                 <div class="flex flex-wrap gap-2 mt-3">
                     <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Shopify Plus features.">Shopify Plus</span>
@@ -137,6 +137,7 @@
 
     <div id="progressBar"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('y').textContent = new Date().getFullYear();
         // Skill popovers
@@ -165,13 +166,32 @@
             window.addEventListener('resize', update);
         })();
 
-        // Smooth scroll navigation
+        // Initialize Bootstrap ScrollSpy
         (function(){
-            var navLinks = document.querySelectorAll('.nav-link');
-            var sections = document.querySelectorAll('.proj');
+            // Initialize ScrollSpy
+            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navbar',
+                offset: 80
+            });
+            
+            // Add custom styling for active nav links
+            document.addEventListener('activate.bs.scrollspy', function (e) {
+                // Remove active class from all nav links
+                document.querySelectorAll('.nav-link').forEach(function(link){
+                    link.classList.remove('text-[#111827]');
+                    link.classList.add('text-gray-600');
+                });
+                
+                // Add active class to current nav link
+                var activeLink = document.querySelector('.nav-link[href="' + e.relatedTarget + '"]');
+                if(activeLink){
+                    activeLink.classList.remove('text-gray-600');
+                    activeLink.classList.add('text-[#111827]');
+                }
+            });
             
             // Add smooth scroll to navigation links
-            navLinks.forEach(function(link){
+            document.querySelectorAll('.nav-link').forEach(function(link){
                 link.addEventListener('click', function(e){
                     e.preventDefault();
                     var targetId = this.getAttribute('href').substring(1);
@@ -187,30 +207,6 @@
                     }
                 });
             });
-            
-            function updateActiveNav(){
-                var scrollPos = window.scrollY + 100;
-                sections.forEach(function(section){
-                    var top = section.offsetTop;
-                    var bottom = top + section.offsetHeight;
-                    var id = section.getAttribute('id');
-                    
-                    if(scrollPos >= top && scrollPos < bottom){
-                        navLinks.forEach(function(link){
-                            link.classList.remove('text-[#111827]');
-                            link.classList.add('text-gray-600');
-                        });
-                        var activeLink = document.querySelector('a[href="#' + id + '"]');
-                        if(activeLink){
-                            activeLink.classList.remove('text-gray-600');
-                            activeLink.classList.add('text-[#111827]');
-                        }
-                    }
-                });
-            }
-            
-            window.addEventListener('scroll', updateActiveNav);
-            updateActiveNav();
         })();
 
         // Reveal projects on scroll using anime.js with varied animations
