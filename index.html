@@ -1,241 +1,205 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Projects</title>
-    <meta name="description" content="Selected ecommerce builds and optimizations.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        base: '#0b0d12',
-                        card: '#0f1421',
-                        text: '#e8ecf1',
-                        muted: '#dadada',
-                        brand: '#5aa9ff',
-                        mint: '#7cf3c5'
-                    },
-                    boxShadow: {
-                        soft: '0 10px 30px rgba(0,0,0,.35)'
-                    },
-                    transitionTimingFunction: {
-                        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)'
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230b0d12' stroke='%237cf3c5' stroke-width='8'/%3E%3Cpath d='M28 64 L50 20 L72 64' stroke='%235aa9ff' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-    <meta name="theme-color" content="#0b0d12">
-    <style>
-        body{background:#ffffff}
-        .skill{background:#111827 !important}
-        #progressBar{position:fixed;left:0;bottom:0;height:4px;background:linear-gradient(90deg,#5aa9ff,#7cf3c5);width:0;z-index:50;box-shadow:0 0 10px rgba(0,0,0,.2)}
-        .proj img{background:transparent !important}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaming Ring | Senior Shopify Developer</title>
+  <meta name="description" content="Jaming Ring is a senior Shopify developer. Selected work includes Fellow Products, Kassatex, Chubbies Shorts, and Cariuma.">
+  <link rel="canonical" href="https://prof-coder.github.io/">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaming Ring | Senior Shopify Developer">
+  <meta property="og:description" content="Shopify themes, custom storefront functionality, performance, and e-commerce integrations.">
+  <meta property="og:url" content="https://prof-coder.github.io/">
+  <meta property="og:image" content="https://prof-coder.github.io/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="antialiased text-[#111827]">
-    <header class="max-w-6xl mx-auto px-5 pt-10 pb-4">
-        <h1 class="text-3xl tracking-tight font-semibold">Selected Work</h1>
-        <p class="text-muted text-sm">Ecommerce builds and optimizations. Hover to preview mobile.</p>
-    </header>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap site-header__bar">
+      <a class="wordmark" href="/">Jaming Ring</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle__open">Menu</span>
+        <span class="nav-toggle__close">Close</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="/#work">Selected Work</a>
+        <a href="/#expertise">Expertise</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a class="button button--small" href="/#contact">Let's Talk</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Sticky Navigation with ScrollSpy -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200" id="navbar">
-        <div class="max-w-6xl mx-auto px-5 py-3">
-            <div class="flex gap-6 overflow-x-auto">
-                <a href="#fellow" class="nav-link whitespace-nowrap text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors duration-200">Fellow Products</a>
-                <a href="#kassatex" class="nav-link whitespace-nowrap text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors duration-200">Kassatex</a>
-                <a href="#chubbies" class="nav-link whitespace-nowrap text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors duration-200">Chubbies Shorts</a>
-                <a href="#cariuma" class="nav-link whitespace-nowrap text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors duration-200">Cariuma</a>
-            </div>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Senior Shopify Developer</p>
+        <h1 id="hero-title">Building better Shopify experiences that turn visitors into customers.</h1>
+        <p class="lede">I build Shopify themes, custom storefront functionality, and the integrations around them. The work covers Online Store 2.0 architecture, performance, and merchandising details that have to hold up after launch.</p>
+        <div class="hero__actions">
+          <a class="button" href="#work">View Selected Work</a>
+          <a class="button button--ghost" href="#contact">Let's Discuss Your Project</a>
         </div>
-    </nav>
-
-    <main id="work" class="max-w-6xl mx-auto px-5 space-y-8 pb-16">
-        <!-- Fellow Products -->
-        <a id="fellow" href="https://fellowproducts.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#111827] opacity-0 translate-y-6" data-anim="fade-up">
-            <div class="relative w-full aspect-[16/9] overflow-hidden bg-[#dfdada] group-hover:bg-[#dfdada]">
-                <img src="assets/Fellow Products - Desktop.png" alt="Fellow Products desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
-                <img src="assets/Fellow Products - Mobile.png" alt="Fellow Products mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
-            </div>
-            <div class="p-5">
-                <h3 class="text-lg font-semibold text-white">Fellow Products</h3>
-                <p class="text-muted text-sm">Shopify optimization, responsive landers, speed, variants, gifts, checkout validation.</p>
-                <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Liquid, JS, Scripts, Checkout Ext.">Shopify</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Performance budgeting, lazy-loading, CLS/LCP.">Performance</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Gift logic, dynamic pricing.">Custom Features</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Kassatex -->
-        <a id="kassatex" href="https://kassatex.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#1b4d7a] opacity-0 translate-y-6" data-anim="fade-right">
-            <div class="relative w-full aspect-[16/9] overflow-hidden bg-[#dfdada] group-hover:bg-[#dfdada]">
-                <img src="assets/Kassatex- Desktop.png" alt="Kassatex desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
-                <img src="assets/Kassatex- Mobile.png" alt="Kassatex mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
-            </div>
-            <div class="p-5">
-                <h3 class="text-lg font-semibold text-white">Kassatex</h3>
-                <p class="text-muted text-sm">Lightweight theme, speed, modular A/B testing, Klaviyo integration.</p>
-                <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Section schema, settings, metafields.">Theme</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="ES6 modules for test buckets.">A/B Testing</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Flows without page weight.">Klaviyo</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Chubbies Shorts -->
-        <a id="chubbies" href="https://chubbiesshorts.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#0ea5e9] opacity-0 translate-y-6" data-anim="zoom-in">
-            <div class="relative w-full aspect-[16/9] overflow-hidden bg-[#dfdada] group-hover:bg-[#dfdada]">
-                <img src="assets/Chubbies Shorts - Desktop.png" alt="Chubbies Shorts desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
-                <img src="assets/Chubbies Shorts - Mobile.png" alt="Chubbies Shorts mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
-            </div>
-            <div class="p-5">
-                <h3 class="text-lg font-semibold text-white">Chubbies Shorts</h3>
-                <p class="text-muted text-sm">Headless migration with React + Remix. Reusable UI and storefront API.</p>
-                <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Server and client routing.">Remix</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="GraphQL queries, caching.">Storefront API</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="Design systems from Figma.">Components</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- Cariuma -->
-        <a id="cariuma" href="https://cariuma.com" target="_blank" rel="noopener" class="proj group block rounded-2xl overflow-hidden border border-white/10 shadow-soft bg-[#2db34a] opacity-0 translate-y-6" data-anim="rotate-in">
-            <div class="relative w-full aspect-[16/9] overflow-hidden bg-[#dfdada] group-hover:bg-[#dfdada]">
-                <img src="assets/Cariuma - Desktop.png" alt="Cariuma desktop" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-expo opacity-100 group-hover:opacity-0">
-                <img src="assets/Cariuma - Mobile.png" alt="Cariuma mobile" class="absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ease-expo opacity-0 group-hover:opacity-100">
-            </div>
-            <div class="p-5">
-                <h3 class="text-lg font-semibold text-white">Cariuma</h3>
-                <p class="text-muted text-sm">Multi-language, multi-currency, app integrations, dynamic landing pages.</p>
-                <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-brand/15 text-brand border border-brand/40" data-tip="Shopify Plus features.">Shopify Plus</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-white/10 text-text border border-white/20" data-tip="Internationalization and locales.">i18n</span>
-                    <span class="skill relative inline-flex items-center px-2.5 py-1 rounded-full text-xs bg-mint/15 text-mint border border-mint/40" data-tip="HTML5 video, lazy loading.">Dynamic</span>
-                </div>
-            </div>
-        </a>
-    </main>
-
-    <footer class="max-w-6xl mx-auto px-5 pb-24">
-        <div class="flex items-center justify-between gap-4">
-            <p class="text-muted text-sm">© <span id="y"></span> Prof Coder — Portfolio</p>
-            <a href="mailto:profcoder810@gmail.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-white bg-[#000] border border-white/15 shadow-soft hover:shadow-lg hover:scale-[1.02] active:scale-[.99] transition-all duration-300 ease-expo">
-                Contact Jaming Now!
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M2.25 6.75c0-1.243 1.007-2.25 2.25-2.25h15c1.243 0 2.25 1.007 2.25 2.25v10.5c0 1.243-1.007 2.25-2.25 2.25h-15c-1.243 0-2.25-1.007-2.25-2.25V6.75Zm2.288-.53a.75.75 0 0 0-1.026 1.094l7.5 7.036a.75.75 0 0 0 1.026 0l7.5-7.036a.75.75 0 1 0-1.026-1.094L12 12.54 4.538 6.22Z"/></svg>
-            </a>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="stage__chrome">
+          <i></i><i></i><i></i>
+          <span>Storefront layout</span>
         </div>
-    </footer>
+        <div class="stage__canvas">
+          <div class="stage__hero">Hero</div>
+          <div class="stage__row">
+            <span>Product</span>
+            <span>Product</span>
+            <span>Product</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div id="progressBar"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('y').textContent = new Date().getFullYear();
-        // Skill popovers
-        document.querySelectorAll('.skill').forEach(function(el){
-            var tip = el.getAttribute('data-tip');
-            if(!tip) return;
-            var bubble = document.createElement('span');
-            bubble.className = 'pointer-events-none absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-black/80 text-white text-[11px] px-2 py-1 opacity-0 scale-95 transition-all duration-300 ease-expo shadow-lg';
-            bubble.textContent = tip;
-            el.appendChild(bubble);
-            el.addEventListener('mouseenter', function(){ bubble.style.opacity='1'; bubble.style.transform='translateX(-50%) scale(1)'; });
-            el.addEventListener('mouseleave', function(){ bubble.style.opacity='0'; bubble.style.transform='translateX(-50%) scale(0.95)'; });
-        });
-        // Bottom progress bar
-        (function(){
-            var bar = document.getElementById('progressBar');
-            function update(){
-                var scrollTop = window.scrollY || window.pageYOffset;
-                var docHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-                var winHeight = window.innerHeight;
-                var progress = (scrollTop / (docHeight - winHeight)) * 100;
-                bar.style.width = Math.max(0, Math.min(100, progress)) + '%';
-            }
-            update();
-            window.addEventListener('scroll', update, { passive: true });
-            window.addEventListener('resize', update);
-        })();
+    <section id="work" class="section wrap" aria-labelledby="work-title">
+      <div class="section__head">
+        <h2 id="work-title">Selected work</h2>
+        <p>Theme builds, a headless migration, and an international Shopify Plus store. Open a case study for the contribution, or go straight to the live site.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <a class="project__media" href="/work/fellow-products.html" aria-label="Fellow Products case study">
+            <img class="project__desktop" src="/assets/opt/fellow-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Fellow Products storefront" fetchpriority="high">
+            <img class="project__phone" src="/assets/opt/fellow-mobile.jpg" width="425" height="856" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="project__body">
+            <h3><a href="/work/fellow-products.html">Fellow Products</a></h3>
+            <p class="project__summary">Responsive landing pages, page-speed work, multi-option variants, gift pricing with Shopify Scripts, and a checkout extension for stock validation.</p>
+            <p class="project__meta">Liquid, JavaScript, CSS/SCSS, Shopify Scripts, checkout extensions</p>
+            <p class="project__links">
+              <a href="/work/fellow-products.html">Case study</a>
+              <a href="https://fellowproducts.com" target="_blank" rel="noopener noreferrer">fellowproducts.com</a>
+            </p>
+          </div>
+        </article>
 
-        // Initialize Bootstrap ScrollSpy
-        (function(){
-            // Initialize ScrollSpy
-            var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-                target: '#navbar',
-                offset: 80
-            });
-            
-            // Add custom styling for active nav links
-            document.addEventListener('activate.bs.scrollspy', function (e) {
-                // Remove active class from all nav links
-                document.querySelectorAll('.nav-link').forEach(function(link){
-                    link.classList.remove('text-[#111827]');
-                    link.classList.add('text-gray-600');
-                });
-                
-                // Add active class to current nav link
-                var activeLink = document.querySelector('.nav-link[href="' + e.relatedTarget + '"]');
-                if(activeLink){
-                    activeLink.classList.remove('text-gray-600');
-                    activeLink.classList.add('text-[#111827]');
-                }
-            });
-            
-            // Add smooth scroll to navigation links
-            document.querySelectorAll('.nav-link').forEach(function(link){
-                link.addEventListener('click', function(e){
-                    e.preventDefault();
-                    var targetId = this.getAttribute('href').substring(1);
-                    var targetElement = document.getElementById(targetId);
-                    
-                    if(targetElement){
-                        var offsetTop = targetElement.offsetTop - 80; // Account for sticky nav height
-                        
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        })();
+        <article class="project">
+          <a class="project__media" href="/work/kassatex.html" aria-label="Kassatex case study">
+            <img class="project__desktop" src="/assets/opt/kassatex-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Kassatex storefront" loading="lazy" decoding="async">
+            <img class="project__phone" src="/assets/opt/kassatex-mobile.jpg" width="427" height="856" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="project__body">
+            <h3><a href="/work/kassatex.html">Kassatex</a></h3>
+            <p class="project__summary">A lighter Shopify theme, faster pages, modular JavaScript for A/B tests, and a Klaviyo integration kept off the critical path.</p>
+            <p class="project__meta">Theme customization, JavaScript, Klaviyo</p>
+            <p class="project__links">
+              <a href="/work/kassatex.html">Case study</a>
+              <a href="https://kassatex.com" target="_blank" rel="noopener noreferrer">kassatex.com</a>
+            </p>
+          </div>
+        </article>
 
-        // Reveal projects on scroll using anime.js with varied animations
-        (function(){
-            var items = document.querySelectorAll('.proj');
-            // assign index for staggered delays
-            items.forEach(function(el, i){ el.dataset.idx = i; });
-            if(!('IntersectionObserver' in window)){
-                anime({ targets: items, opacity: [0,1], translateY: [24,0], delay: anime.stagger(120), duration: 700, easing: 'easeOutExpo' });
-                return;
-            }
-            var io = new IntersectionObserver(function(entries){
-                entries.forEach(function(entry){
-                    if(entry.isIntersecting){
-                        var idx = parseInt(entry.target.dataset.idx || '0', 10);
-                        var type = entry.target.getAttribute('data-anim') || 'fade-up';
-                        var opts = { targets: entry.target, opacity: [0,1], duration: 900, delay: idx * 140, easing: 'easeOutExpo' };
-                        if(type === 'fade-up'){ opts.translateY = [24, 0]; }
-                        else if(type === 'fade-right'){ opts.translateX = [-32, 0]; }
-                        else if(type === 'zoom-in'){ opts.scale = [0.94, 1]; }
-                        else if(type === 'rotate-in'){ opts.rotate = [-2, 0]; opts.translateY = [16,0]; }
-                        anime(opts);
-                        io.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.2 });
-            items.forEach(function(el){ io.observe(el); });
-        })();
-    </script>
+        <article class="project">
+          <a class="project__media" href="/work/chubbies-shorts.html" aria-label="Chubbies Shorts case study">
+            <img class="project__desktop" src="/assets/opt/chubbies-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Chubbies Shorts storefront" loading="lazy" decoding="async">
+            <img class="project__phone" src="/assets/opt/chubbies-mobile.jpg" width="426" height="853" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="project__body">
+            <h3><a href="/work/chubbies-shorts.html">Chubbies Shorts</a></h3>
+            <p class="project__summary">A headless rebuild with React and Remix, reusable interface components from Figma, and data from the Shopify Storefront API.</p>
+            <p class="project__meta">React, Remix, GraphQL, Storefront API</p>
+            <p class="project__links">
+              <a href="/work/chubbies-shorts.html">Case study</a>
+              <a href="https://chubbiesshorts.com" target="_blank" rel="noopener noreferrer">chubbiesshorts.com</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="project__media" href="/work/cariuma.html" aria-label="Cariuma case study">
+            <img class="project__desktop" src="/assets/opt/cariuma-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Cariuma storefront" loading="lazy" decoding="async">
+            <img class="project__phone" src="/assets/opt/cariuma-mobile.jpg" width="426" height="855" alt="" loading="lazy" decoding="async">
+          </a>
+          <div class="project__body">
+            <h3><a href="/work/cariuma.html">Cariuma</a></h3>
+            <p class="project__summary">Multi-language and multi-currency support on Shopify Plus, third-party app integration, and landing pages with HTML5 video.</p>
+            <p class="project__meta">Shopify Plus, Liquid, JavaScript, i18n</p>
+            <p class="project__links">
+              <a href="/work/cariuma.html">Case study</a>
+              <a href="https://cariuma.com" target="_blank" rel="noopener noreferrer">cariuma.com</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="expertise" class="section wrap" aria-labelledby="expertise-title">
+      <div class="section__head">
+        <h2 id="expertise-title">Expertise</h2>
+        <p>Theme architecture, storefront JavaScript, Shopify APIs, and performance. Each group is limited to what the resume and these project notes already name.</p>
+      </div>
+      <div class="expertise-grid">
+        <article class="panel">
+          <h3>Shopify themes</h3>
+          <p>Liquid, Online Store 2.0, theme architecture, sections and snippets, metafields, and Shopify Plus.</p>
+        </article>
+        <article class="panel">
+          <h3>Storefront engineering</h3>
+          <p>JavaScript and TypeScript, React, and Remix. The Chubbies Shorts notes describe a headless storefront on the Shopify Storefront API. Next.js and Vue are part of the same frontend toolkit on the resume.</p>
+        </article>
+        <article class="panel">
+          <h3>APIs and integrations</h3>
+          <p>Shopify Admin API, Storefront API, GraphQL, REST, webhooks, and checkout extensibility. Klaviyo is the named marketing integration in the Kassatex notes.</p>
+        </article>
+        <article class="panel">
+          <h3>Performance</h3>
+          <p>Page speed, Core Web Vitals, lazy loading, and keeping scripts and images off the critical path. On key templates, that work has reached PageSpeed scores of 90 and above.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap" aria-labelledby="about-title">
+      <div class="section__head">
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <article class="panel panel--wide">
+          <h3>Engineering for the store, not only the launch</h3>
+          <p>I build Shopify storefronts that another developer can change and a merchant can keep running. That means clear theme structure, careful JavaScript, reviews, and integrations that do not fight the page.</p>
+          <p>Eight years of that work covers theme enhancements, custom functionality, performance, and API integrations, from implementation through QA and launch. The public project notes on this site cover Fellow Products, Kassatex, Chubbies Shorts, and Cariuma.</p>
+          <ul class="facts">
+            <li>Senior Shopify Engineer, Domaine, December 2017 – September 2026</li>
+            <li>Bachelor’s degree, Electrical and Electronics Engineering, The Hong Kong Polytechnic University, 2012–2016</li>
+            <li>Based in Hong Kong</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap" aria-labelledby="contact-title">
+      <div class="contact">
+        <h2 id="contact-title">Have a Shopify project in mind?</h2>
+        <p>For a theme, a storefront rebuild, or a senior developer on an existing Shopify team. Email is the direct line. LinkedIn and GitHub are the same profiles linked from the resume.</p>
+        <div class="contact__actions">
+          <a class="button" href="mailto:profcoder810@gmail.com">profcoder810@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jaming-r-033913406/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+          <a href="https://github.com/prof-coder" rel="me noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__bar">
+      <p>Jaming Ring · Senior Shopify Developer · © <span id="year">2026</span></p>
+      <nav aria-label="Social">
+        <a href="mailto:profcoder810@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/jaming-r-033913406/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="https://github.com/prof-coder" rel="me noopener noreferrer" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>
-
