@@ -3,10 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("is-motion");
+    }
+  </script>
   <title>Jaming Ring | Senior Shopify Developer</title>
   <meta name="description" content="Jaming Ring is a senior Shopify developer. Selected work includes Fellow Products, Kassatex, Chubbies Shorts, and Cariuma.">
   <link rel="canonical" href="https://prof-coder.github.io/">
-  <meta name="theme-color" content="#f6f4ef">
+  <meta name="theme-color" content="#10110f">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jaming Ring | Senior Shopify Developer">
   <meta property="og:description" content="Shopify themes, custom storefront functionality, performance, and e-commerce integrations.">
@@ -14,6 +19,9 @@
   <meta property="og:image" content="https://prof-coder.github.io/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -26,165 +34,165 @@
         <span class="nav-toggle__close">Close</span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary">
-        <a href="/#work">Selected Work</a>
-        <a href="/#expertise">Expertise</a>
-        <a href="/#about">About</a>
-        <a href="/#contact">Contact</a>
-        <a class="button button--small" href="/#contact">Let's Talk</a>
+        <a href="/#work" data-command="Selected work">Work</a>
+        <a href="/#expertise" data-command="Expertise">Expertise</a>
+        <a href="/#about" data-command="About">About</a>
+        <a href="/#contact" data-command="Contact">Contact</a>
       </nav>
+      <button class="search-toggle" id="open-command" type="button" aria-haspopup="dialog" aria-controls="command">
+        <span>Search</span>
+        <kbd>Ctrl K</kbd>
+      </button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow">Senior Shopify Developer</p>
-        <h1 id="hero-title">Building better Shopify experiences that turn visitors into customers.</h1>
-        <p class="lede">I build Shopify themes, custom storefront functionality, and the integrations around them. The work covers Online Store 2.0 architecture, performance, and merchandising details that have to hold up after launch.</p>
-        <div class="hero__actions">
-          <a class="button" href="#work">View Selected Work</a>
-          <a class="button button--ghost" href="#contact">Let's Discuss Your Project</a>
-        </div>
+      <h1 id="hero-title">Jaming Ring</h1>
+      <p class="role">Senior Shopify Developer</p>
+      <p class="focus">Shopify Liquid · Online Store 2.0 · Performance · Headless storefronts</p>
+      <p class="lede">I build Shopify themes, custom storefront functionality, and the integrations around them. The work covers Online Store 2.0 architecture, performance, and merchandising details that have to hold up after launch.</p>
+      <div class="link-row">
+        <a href="#work">View selected work</a>
+        <a href="mailto:profcoder810@gmail.com" data-command="Email">Email me</a>
+        <a href="https://www.linkedin.com/in/jaming-r-033913406/" data-command="LinkedIn" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
       </div>
-      <div class="stage" aria-hidden="true">
-        <div class="stage__chrome">
-          <i></i><i></i><i></i>
-          <span>Storefront layout</span>
-        </div>
-        <div class="stage__canvas">
-          <div class="stage__hero">Hero</div>
-          <div class="stage__row">
-            <span>Product</span>
-            <span>Product</span>
-            <span>Product</span>
-          </div>
-        </div>
-      </div>
+      <p class="status"><span class="status__dot" aria-hidden="true"></span> Based in Hong Kong</p>
+      <figure class="frame">
+        <figcaption class="frame__bar">
+          <span>Fellow Products · Desktop</span>
+          <span>Shopify</span>
+        </figcaption>
+        <img src="/assets/opt/fellow-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Fellow Products storefront" fetchpriority="high">
+      </figure>
     </section>
 
     <section id="work" class="section wrap" aria-labelledby="work-title">
-      <div class="section__head">
-        <h2 id="work-title">Selected work</h2>
-        <p>Theme builds, a headless migration, and an international Shopify Plus store. Open a case study for the contribution, or go straight to the live site.</p>
+      <div class="kicker">
+        <span class="kicker__label">Projects</span>
+        <span>Four storefronts</span>
       </div>
-      <div class="project-grid">
-        <article class="project">
-          <a class="project__media" href="/work/fellow-products.html" aria-label="Fellow Products case study">
-            <img class="project__desktop" src="/assets/opt/fellow-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Fellow Products storefront" fetchpriority="high">
-            <img class="project__phone" src="/assets/opt/fellow-mobile.jpg" width="425" height="856" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="project__body">
-            <h3><a href="/work/fellow-products.html">Fellow Products</a></h3>
-            <p class="project__summary">Responsive landing pages, page-speed work, multi-option variants, gift pricing with Shopify Scripts, and a checkout extension for stock validation.</p>
-            <p class="project__meta">Liquid, JavaScript, CSS/SCSS, Shopify Scripts, checkout extensions</p>
-            <p class="project__links">
-              <a href="/work/fellow-products.html">Case study</a>
-              <a href="https://fellowproducts.com" target="_blank" rel="noopener noreferrer">fellowproducts.com</a>
-            </p>
-          </div>
+      <h2 id="work-title">Selected work.</h2>
+      <div class="work-grid">
+        <article class="work-card">
+          <p class="index">01 / Storefront</p>
+          <h3><a href="/work/fellow-products.html" data-command="Fellow Products">Fellow Products</a></h3>
+          <p class="work-card__summary">Responsive landing pages, page-speed work, multi-option variants, gift pricing with Shopify Scripts, and a checkout extension for stock validation.</p>
+          <p class="work-card__stack">Liquid · JavaScript · CSS/SCSS · Shopify Scripts · Checkout extensions</p>
+          <p class="work-card__links">
+            <a href="/work/fellow-products.html">Case study</a>
+            <a href="https://fellowproducts.com" target="_blank" rel="noopener noreferrer">fellowproducts.com</a>
+          </p>
+          <img src="/assets/opt/fellow-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Fellow Products storefront" loading="lazy" decoding="async">
         </article>
-
-        <article class="project">
-          <a class="project__media" href="/work/kassatex.html" aria-label="Kassatex case study">
-            <img class="project__desktop" src="/assets/opt/kassatex-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Kassatex storefront" loading="lazy" decoding="async">
-            <img class="project__phone" src="/assets/opt/kassatex-mobile.jpg" width="427" height="856" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="project__body">
-            <h3><a href="/work/kassatex.html">Kassatex</a></h3>
-            <p class="project__summary">A lighter Shopify theme, faster pages, modular JavaScript for A/B tests, and a Klaviyo integration kept off the critical path.</p>
-            <p class="project__meta">Theme customization, JavaScript, Klaviyo</p>
-            <p class="project__links">
-              <a href="/work/kassatex.html">Case study</a>
-              <a href="https://kassatex.com" target="_blank" rel="noopener noreferrer">kassatex.com</a>
-            </p>
-          </div>
+        <article class="work-card">
+          <p class="index">02 / Theme</p>
+          <h3><a href="/work/kassatex.html" data-command="Kassatex">Kassatex</a></h3>
+          <p class="work-card__summary">A lighter Shopify theme, faster pages, modular JavaScript for A/B tests, and a Klaviyo integration kept off the critical path.</p>
+          <p class="work-card__stack">Theme customization · JavaScript · Klaviyo</p>
+          <p class="work-card__links">
+            <a href="/work/kassatex.html">Case study</a>
+            <a href="https://kassatex.com" target="_blank" rel="noopener noreferrer">kassatex.com</a>
+          </p>
+          <img src="/assets/opt/kassatex-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Kassatex storefront" loading="lazy" decoding="async">
         </article>
-
-        <article class="project">
-          <a class="project__media" href="/work/chubbies-shorts.html" aria-label="Chubbies Shorts case study">
-            <img class="project__desktop" src="/assets/opt/chubbies-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Chubbies Shorts storefront" loading="lazy" decoding="async">
-            <img class="project__phone" src="/assets/opt/chubbies-mobile.jpg" width="426" height="853" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="project__body">
-            <h3><a href="/work/chubbies-shorts.html">Chubbies Shorts</a></h3>
-            <p class="project__summary">A headless rebuild with React and Remix, reusable interface components from Figma, and data from the Shopify Storefront API.</p>
-            <p class="project__meta">React, Remix, GraphQL, Storefront API</p>
-            <p class="project__links">
-              <a href="/work/chubbies-shorts.html">Case study</a>
-              <a href="https://chubbiesshorts.com" target="_blank" rel="noopener noreferrer">chubbiesshorts.com</a>
-            </p>
-          </div>
+        <article class="work-card">
+          <p class="index">03 / Headless</p>
+          <h3><a href="/work/chubbies-shorts.html" data-command="Chubbies Shorts">Chubbies Shorts</a></h3>
+          <p class="work-card__summary">A headless rebuild with React and Remix, reusable interface components from Figma, and data from the Shopify Storefront API.</p>
+          <p class="work-card__stack">React · Remix · GraphQL · Storefront API</p>
+          <p class="work-card__links">
+            <a href="/work/chubbies-shorts.html">Case study</a>
+            <a href="https://chubbiesshorts.com" target="_blank" rel="noopener noreferrer">chubbiesshorts.com</a>
+          </p>
+          <img src="/assets/opt/chubbies-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Chubbies Shorts storefront" loading="lazy" decoding="async">
         </article>
-
-        <article class="project">
-          <a class="project__media" href="/work/cariuma.html" aria-label="Cariuma case study">
-            <img class="project__desktop" src="/assets/opt/cariuma-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Cariuma storefront" loading="lazy" decoding="async">
-            <img class="project__phone" src="/assets/opt/cariuma-mobile.jpg" width="426" height="855" alt="" loading="lazy" decoding="async">
-          </a>
-          <div class="project__body">
-            <h3><a href="/work/cariuma.html">Cariuma</a></h3>
-            <p class="project__summary">Multi-language and multi-currency support on Shopify Plus, third-party app integration, and landing pages with HTML5 video.</p>
-            <p class="project__meta">Shopify Plus, Liquid, JavaScript, i18n</p>
-            <p class="project__links">
-              <a href="/work/cariuma.html">Case study</a>
-              <a href="https://cariuma.com" target="_blank" rel="noopener noreferrer">cariuma.com</a>
-            </p>
-          </div>
+        <article class="work-card">
+          <p class="index">04 / Shopify Plus</p>
+          <h3><a href="/work/cariuma.html" data-command="Cariuma">Cariuma</a></h3>
+          <p class="work-card__summary">Multi-language and multi-currency support on Shopify Plus, third-party app integration, and landing pages with HTML5 video.</p>
+          <p class="work-card__stack">Shopify Plus · Liquid · JavaScript · i18n</p>
+          <p class="work-card__links">
+            <a href="/work/cariuma.html">Case study</a>
+            <a href="https://cariuma.com" target="_blank" rel="noopener noreferrer">cariuma.com</a>
+          </p>
+          <img src="/assets/opt/cariuma-desktop.jpg" width="1600" height="900" alt="Desktop screenshot of the Cariuma storefront" loading="lazy" decoding="async">
         </article>
       </div>
     </section>
 
     <section id="expertise" class="section wrap" aria-labelledby="expertise-title">
-      <div class="section__head">
-        <h2 id="expertise-title">Expertise</h2>
-        <p>Theme architecture, storefront JavaScript, Shopify APIs, and performance. Each group is limited to what the resume and these project notes already name.</p>
+      <div class="kicker">
+        <span class="kicker__label">Expertise</span>
+        <span>From the resume and these project notes</span>
       </div>
-      <div class="expertise-grid">
-        <article class="panel">
-          <h3>Shopify themes</h3>
-          <p>Liquid, Online Store 2.0, theme architecture, sections and snippets, metafields, and Shopify Plus.</p>
-        </article>
-        <article class="panel">
-          <h3>Storefront engineering</h3>
-          <p>JavaScript and TypeScript, React, and Remix. The Chubbies Shorts notes describe a headless storefront on the Shopify Storefront API. Next.js and Vue are part of the same frontend toolkit on the resume.</p>
-        </article>
-        <article class="panel">
-          <h3>APIs and integrations</h3>
-          <p>Shopify Admin API, Storefront API, GraphQL, REST, webhooks, and checkout extensibility. Klaviyo is the named marketing integration in the Kassatex notes.</p>
-        </article>
-        <article class="panel">
-          <h3>Performance</h3>
-          <p>Page speed, Core Web Vitals, lazy loading, and keeping scripts and images off the critical path. On key templates, that work has reached PageSpeed scores of 90 and above.</p>
-        </article>
-      </div>
+      <h2 id="expertise-title">The stack behind the work.</h2>
+      <ol class="skill-list">
+        <li class="skill-row">
+          <p class="index">01 / Shopify themes</p>
+          <p>Liquid · Online Store 2.0 · Theme architecture · Sections and snippets · Metafields · Shopify Plus</p>
+        </li>
+        <li class="skill-row">
+          <p class="index">02 / Storefront engineering</p>
+          <p>JavaScript · TypeScript · React · Remix · Next.js · Vue</p>
+        </li>
+        <li class="skill-row">
+          <p class="index">03 / APIs and integrations</p>
+          <p>Admin API · Storefront API · GraphQL · REST · Webhooks · Checkout extensibility · Klaviyo</p>
+        </li>
+        <li class="skill-row">
+          <p class="index">04 / Performance</p>
+          <p>Page speed · Core Web Vitals · Lazy loading · Script and image weight · PageSpeed 90 and above on key templates</p>
+        </li>
+      </ol>
     </section>
 
     <section id="about" class="section wrap" aria-labelledby="about-title">
-      <div class="section__head">
-        <h2 id="about-title">About</h2>
+      <div class="kicker">
+        <span class="kicker__label">About</span>
       </div>
-      <div class="about-grid">
-        <article class="panel panel--wide">
-          <h3>Engineering for the store, not only the launch</h3>
+      <div class="about-layout">
+        <div class="about-copy">
+          <h2 id="about-title">Engineering for the store, not only the launch.</h2>
           <p>I build Shopify storefronts that another developer can change and a merchant can keep running. That means clear theme structure, careful JavaScript, reviews, and integrations that do not fight the page.</p>
           <p>Eight years of that work covers theme enhancements, custom functionality, performance, and API integrations, from implementation through QA and launch. The public project notes on this site cover Fellow Products, Kassatex, Chubbies Shorts, and Cariuma.</p>
-          <ul class="facts">
-            <li>Senior Shopify Engineer, Domaine, December 2017 – September 2026</li>
-            <li>Bachelor’s degree, Electrical and Electronics Engineering, The Hong Kong Polytechnic University, 2012–2016</li>
-            <li>Based in Hong Kong</li>
-          </ul>
-        </article>
+        </div>
+        <aside class="glance" aria-label="At a glance">
+          <p class="index">At a glance</p>
+          <dl>
+            <div>
+              <dt>Role</dt>
+              <dd>Senior Shopify Engineer, Domaine</dd>
+            </div>
+            <div>
+              <dt>Dates</dt>
+              <dd>December 2017 – September 2026</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Hong Kong</dd>
+            </div>
+            <div>
+              <dt>Education</dt>
+              <dd>BEng, Electrical and Electronics Engineering, The Hong Kong Polytechnic University, 2012–2016</dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </section>
 
     <section id="contact" class="section wrap" aria-labelledby="contact-title">
-      <div class="contact">
+      <div class="kicker">
+        <span class="kicker__label">Contact</span>
+      </div>
+      <div class="contact-block">
         <h2 id="contact-title">Have a Shopify project in mind?</h2>
-        <p>For a theme, a storefront rebuild, or a senior developer on an existing Shopify team. Email is the direct line. LinkedIn and GitHub are the same profiles linked from the resume.</p>
-        <div class="contact__actions">
-          <a class="button" href="mailto:profcoder810@gmail.com">profcoder810@gmail.com</a>
+        <p>For a theme, a storefront rebuild, or a senior developer on an existing Shopify team. Email is the direct line.</p>
+        <div class="contact-actions">
+          <a class="email-link" href="mailto:profcoder810@gmail.com">profcoder810@gmail.com</a>
+          <button class="copy-email" id="copy-email" type="button" data-email="profcoder810@gmail.com">Copy email</button>
           <a href="https://www.linkedin.com/in/jaming-r-033913406/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
-          <a href="https://github.com/prof-coder" rel="me noopener noreferrer" target="_blank">GitHub</a>
+          <a href="https://github.com/prof-coder" data-command="GitHub" rel="me noopener noreferrer" target="_blank">GitHub</a>
         </div>
       </div>
     </section>
@@ -197,9 +205,12 @@
         <a href="mailto:profcoder810@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/jaming-r-033913406/" rel="me noopener noreferrer" target="_blank">LinkedIn</a>
         <a href="https://github.com/prof-coder" rel="me noopener noreferrer" target="_blank">GitHub</a>
+        <a href="#main">Back to top</a>
       </nav>
     </div>
   </footer>
+  <script src="/js/anime.umd.min.js"></script>
+  <script src="/js/motion.js"></script>
   <script src="/js/site.js"></script>
 </body>
 </html>
